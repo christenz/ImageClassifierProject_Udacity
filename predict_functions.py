@@ -33,8 +33,8 @@ def get_input_arguments():
     parser = argparse.ArgumentParser(description="Process user input.")
     
     #add arguments
-    parser.add_argument("image_path", help = "Path to image")#  use e.g. "ImageClassifier/flowers/test/1/image_06743.jpg"
-    parser.add_argument("checkpoint", help = "Checkpoint of pre-trained model") #use e.g. "checkpoint.pth"
+    parser.add_argument("--image_path", help = "Path to image")#  use e.g. "ImageClassifier/flowers/test/1/image_06743.jpg"
+    parser.add_argument("--checkpoint", help = "Checkpoint of pre-trained model") #use e.g. "checkpoint.pth"
     parser.add_argument("--top_k", help = "if True, creates a maping to real names", default = 3)
     parser.add_argument("--GPU", help = "turn cuda on", default = False)
     

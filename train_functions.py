@@ -33,7 +33,7 @@ def get_input_arguments():
     parser = argparse.ArgumentParser(description="Process user input.")
     
     #add arguments
-    parser.add_argument("data_dir", help = "Directory of the input data") #Use "ImageClassifier/flowers"
+    parser.add_argument("--data_dir", help = "Directory of the input data") #Use "ImageClassifier/flowers"
     parser.add_argument("--arg", help = "Set a model architecture", default = "VGG16")
     parser.add_argument("--learning_rate", help = "Set a learning rate", default = 0.001)
     parser.add_argument("--hidden_units_1", help = "Set the number of nodes in the 1st hidden unit", default = 4096)
